@@ -1,0 +1,16 @@
+<template name="item">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Detail</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent class="padding"}}
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
+    {{/ionContent}}
+  {{/ionView}}
+</template>

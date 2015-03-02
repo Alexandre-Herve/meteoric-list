@@ -1,0 +1,24 @@
+<template name="home">
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Items</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList class="my-class"}}
+        {{#each items}}
+          {{#ionItem}}
+            <span style="float: right" class="remove">&times;</span>
+            <h2><a href="/items/{{_id}}">{{title}}</a></h2>
+          {{/ionItem}}
+        {{/each}}
+      {{/ionList}}
+    {{/ionContent}}
+
+    {{#ionFooterBar class="bar-dark" href="/form"}}
+      <h1 class="title"><a href="/form">Add new item</a></h1>
+    {{/ionFooterBar}}
+
+  {{/ionView}}
+</template>

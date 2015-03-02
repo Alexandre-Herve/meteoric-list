@@ -1,0 +1,10 @@
+<template name="basicLayout">
+  {{#ionBody}}
+    {{> ionNavBar}}
+
+    {{#ionNavView}}
+      {{> yield}}
+    {{/ionNavView}}
+
+  {{/ionBody}}
+</template>

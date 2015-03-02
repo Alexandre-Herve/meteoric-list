@@ -1,0 +1,12 @@
+<template name="form">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton}}
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <h4 class="padding">Fill in information for your brand new item</h4>
+      {{> quickForm collection="item" id="form" type="insert" buttonContent="Create Item"}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>

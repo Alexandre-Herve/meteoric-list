@@ -1,0 +1,25 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   'sanjo:jasmine',
+1 verbose cli   'versions' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 error TypeError: Cannot call method 'replace' of null
+4 error     at cf (/usr/local/lib/node_modules/npm/node_modules/npm-cache-filename/index.js:14:22)
+4 error     at RegClient.get (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:28:20)
+4 error     at EventEmitter.view (/usr/local/lib/node_modules/npm/lib/view.js:64:12)
+4 error     at Object.commandCache.(anonymous function) (/usr/local/lib/node_modules/npm/lib/npm.js:221:11)
+4 error     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/bin/npm-cli.js:83:28)
+4 error     at process._tickCallback (node.js:419:13)
+5 error If you need help, you may report this *entire* log,
+5 error including the npm and node versions, at:
+5 error     <http://github.com/npm/npm/issues>
+6 error System Darwin 14.1.0
+7 error command "node" "/usr/local/bin/npm" "view" "sanjo:jasmine" "versions"
+8 error cwd /Users/alexandre/Documents/Programmation/Sandbox/meteor/meteor/orionApp
+9 error node -v v0.10.33
+10 error npm -v 1.4.28
+11 error type non_object_property_call
+12 verbose exit [ 1, true ]
